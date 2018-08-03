@@ -1,0 +1,81 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english,serbian]{babel}
+\usepackage[unicode]{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+\usepackage[title]{appendix}
+\usepackage{float}
+\usepackage[graphicx]{realboxes}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\lstset {
+    language=C++,
+    frame=single,
+    framesep=10pt,
+    tabsize=4,
+    showstringspaces=false,
+    upquote=true,
+    commentstyle=\color{commentgreen},
+    keywordstyle=\color{orange},
+    stringstyle=\color{red},
+    basicstyle=\small\ttfamily,
+    emph={int,char,double,float,unsigned,void,bool},
+    emphstyle={\color{blue}},
+    escapechar=\&,
+    % keyword highlighting
+    classoffset=1, % starting new class
+    morekeywords={>,<,.,;,,,-,!,=,~},
+    keywordstyle=\color{weborange},
+    classoffset=0,
+}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[section]
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definicija}
+\newtheorem{exmp}[thm]{Primer}
+\newtheorem{assn}[thm]{Pretpostavka}
+\newtheorem{obsn}[thm]{Zapa\v{z}anje}
+
+
+\begin{document}
+
+\title{Automatsko generisanje plejlisti\\ \small{Seminarski rad u okviru kursa\\Ma\v{s}insko u\v{c}enje\\ Matematički fakultet}}
+
+\author{\href{mailto:mi14031@matf.bg.ac.rs}{Milana Kova\v{c}evi\'c}\\\href{mailto:mi14042@matf.bg.ac.rs}{Ivan Ristovi\'c}}
+\date{jul 2018.}
+
+\maketitle
+
+\input{parts/00_abstract}
+
+\tableofcontents
+
+\newpage
+
+%\input{parts/}
+
+\addcontentsline{toc}{section}{Literatura}
+\bibliographystyle{plain}
+\bibliography{literature}
+
+\newpage
+
+%\begin{appendices}
+%\input{parts/???}
+%\end{appendices}
+
+\end{document}
