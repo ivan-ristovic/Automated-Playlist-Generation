@@ -1,0 +1,130 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{beamer}
+\usetheme{Szeged}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[english, serbian]{babel}
+
+%\usepackage[unicode]{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+\usepackage[title]{appendix}
+\usepackage{float}
+\usepackage[graphicx]{realboxes}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{adjustbox}
+\lstset {
+    language=Python,
+    frame=none,
+    %xleftmargin=-.25in,
+    %xrightmargin=.25in
+    framesep=10pt,
+    tabsize=4,
+    showstringspaces=false,
+    upquote=true,
+    commentstyle=\color{gray},
+    keywordstyle=\color{orange},
+    stringstyle=\color{red},
+    basicstyle=\scriptsize\ttfamily,
+    emph={int,char,double,float,unsigned,void,bool},
+    emphstyle={\color{blue}},
+    escapechar=\&,
+    classoffset=1,
+    morekeywords={>,<,.,;,,,-,!,=,~},
+    keywordstyle=\color{weborange},
+    classoffset=0,
+    breaklines=true
+}
+
+\usepackage[font=scriptsize,labelfont=bf]{caption}
+
+
+\title{Automatsko generisanje plejlisti}
+
+\author{\href{mailto:mi14031@matf.bg.ac.rs}{Ivan Ristović}, \href{mailto:mi14042@matf.bg.ac.rs}{Milana Kovačević}
+}
+\date{septembar 2018.}
+
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Zadatak}
+    \begin{itemize}
+        \item Na osnovu skupa podataka o raznovrsnim pesmama generisati plejliste
+        \item Svaka generisana plejlista mora sadrzati ``sli\v{c}ne'' pesme (dozvoljene su male varijacije \v{z}anra, ja\v{c}ine itd.)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Skup podataka}
+    \begin{itemize}
+        \item Spotify
+        \item R biblioteke za generisanje CSV fajlova
+    \end{itemize}
+    % TODO slika skupa podataka
+\end{frame}
+
+\begin{frame}{Skup podataka}
+    % TODO histogrami i scatterplotovi
+\end{frame}
+
+\begin{frame}{Kori\v{s}ceni modeli}
+    \begin{itemize}
+        \item Multinomijalna logisti\v{c}ka regresija
+        \item SVM
+        \begin{itemize}
+            \item Linearni SVM
+            \item Kernelizovani SVM
+        \end{itemize}
+        \item KNN
+        \item Neuronske mre\v{z}e ?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Multinomijalna logisti\v{c}ka regresija}
+    % TODO izvestaj
+\end{frame}
+
+\begin{frame}{Linearni SVM}
+    % TODO izvestaj
+\end{frame}
+
+\begin{frame}{Kernelizovani SVM}
+    % TODO izvestaj
+\end{frame}
+
+\begin{frame}{KNN}
+    % TODO izvestaj
+\end{frame}
+
+\begin{frame}{Neuronske mre\v{z}e}
+    % TODO izvestaj
+\end{frame}
+
+\begin{frame}{Ukupni rezultati}
+    % TODO uporediti sve iznad: u jednu tabelu npr : alg - acc (r2, f1...) - err etc.
+\end{frame}
+
+\begin{frame}{Pitanja}
+    \centering
+    ???
+\end{frame}
+
+\begin{frame}{}
+    \centering
+    Hvala na pa\v{z}nji!
+\end{frame}
+
+\end{document}
