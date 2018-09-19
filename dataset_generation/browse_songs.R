@@ -27,9 +27,16 @@ message('Done!')
 
 message('Browsing new-releases...')
 
+source("browse_categories.r")
+
 # TODO: browse new releases/categories and generate dataset
 
-# some code here...
+categories <- browse_categories()
+categories
+
+source("browse_playlists_by_category.r")
+playlists <- browse_playlists_by_category("pop")
+playlists
 
 #message('Combining data into csv...')
 #combined_dataset <- rbind(data1, data2) 
